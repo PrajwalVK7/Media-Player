@@ -3,15 +3,18 @@ import './App.css';
 import Home from './pages/Home';
 import Landingpage from './pages/Landingpage';
 import Watchhistory from './pages/Watchhistory';
+import Header from './components/Header';
+import Footer from './components/Footer';
 function App() {
   return (
     <div>
-      <h1>Media Player</h1>
+      <Header/>
       <Routes>
-        <Route path='/' element={<Home/>} Home />
+        <Route path='/home' element={<Home/>} Home />
         <Route path='/History' element={<Watchhistory/>}/>
-        <Route path='/landing' element={<Landingpage/>}/>
+        <Route path='/' element={<Landingpage/>}/>
       </Routes>
+      <Footer/>
       
     </div>
   );
