@@ -1,10 +1,11 @@
 import React from 'react'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 function Footer() {
     return (
         <div className='container'>
             <div className=" footer row  w-100 mb-3">
-                <div className='col-lg-3 text-center ' >
+                <div className='col-lg-3 text-center mt-3' >
                     <h4 href="#home" style={{ color: "white", fontSize: "20px" }}>
                         <i class="fa-solid fa-video text-warning me-3" ></i>
                         Media Player
@@ -13,15 +14,15 @@ function Footer() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptatum saepe eveniet iusto. Ad sunt molestias atque, labore natus et nulla eaque quaerat hic porro, mollitia voluptate unde assumenda itaque.
                     </h6>
                 </div>
-                <div className='col-lg-3 text-center  '>
+                <div className='col-lg-3 text-center mt-3 '>
                     <h4 className=''>Links</h4>
                     <div className=''>
-                        <h6>Home</h6>
-                        <h6>Landing Page</h6>
-                        <h6>Watch history</h6>
+                        <Link style={{textDecoration:"none"}} to={'/home'}><h6 className='text-primary' >Home</h6></Link>
+                        <Link style={{textDecoration:"none"}} to={'/'}><h6 className='text-primary' >Landing Page</h6></Link>
+                        <Link style={{textDecoration:"none"}} to={'/history'}><h6 className='text-primary' >Watch history</h6></Link>
                     </div>
                 </div>
-                <div className='col-lg-3  text-center'>
+                <div className='col-lg-3  text-center mt-3'>
                     <div>
                         <h4>Guides</h4>
                         <h6>React</h6>
@@ -29,7 +30,7 @@ function Footer() {
                         <h6>Guides</h6>
                     </div>
                 </div>
-                <div className='col-lg-3 text-center'>
+                <div className='col-lg-3 text-center mt-3'>
                     <h4>Contact Us</h4>
                     <div className='d-flex'>
                         <input className='form-control' placeholder='Enter Your Email' type="text" />
