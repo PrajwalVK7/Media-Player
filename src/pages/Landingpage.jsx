@@ -15,7 +15,7 @@ function Landingpage() {
     return (
         <div>
             <Container className='mb-5 mt-5'>
-                <Row>
+                <Row className='mb-5'>
                     <Col lg={6} md={6}>
                         <h3>Welcome to <span className='text-warning'>Media Player</span></h3>
                         <p className='text-white' style={{ textAlign: "justify" }}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et veniam error repudiandae sunt similique culpa vero, nihil eaque sequi blanditiis expedita debitis pariatur omnis impedit quis molestias esse nostrum recusandae!
@@ -85,6 +85,33 @@ function Landingpage() {
                                     </Card>
                                 </div>
                             </Col>
+                        </Row>
+                    </Container>
+                </div>
+                <div className='mt-5 mb-5'>
+                    <Container className='border border-2 border-secondary rounded p-5'>
+                        <Row>
+                            <Col lg={6} >
+                                <h3 className='text-warning'>Simple and Powerful</h3>
+                                <p className='text-white'>
+                                    <span className='fw-bolder fs-5'>Play Everything :</span>
+                                    <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea perspiciatis reprehenderit accusamus, tempora quis cum beatae, debitis incidunt sapiente illum facere, amet id quae ut aliquid numquam officiis vitae?</span>
+                                </p>
+                                <p className='text-white'>
+                                    <span className='fw-bolder fs-5'>Play Everything :</span>
+                                    <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea perspiciatis reprehenderit accusamus, tempora quis cum beatae, debitis incidunt sapiente illum facere, amet id quae ut aliquid numquam officiis vitae?</span>
+                                </p><p className='text-white'>
+                                    <span className='fw-bolder fs-5'>Play Everything :</span>
+                                    <span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium ea perspiciatis reprehenderit accusamus, tempora quis cum beatae, debitis incidunt sapiente illum facere, amet id quae ut aliquid numquam officiis vitae?</span>
+                                </p>
+                            </Col>
+                            <Col lg={6} >
+                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/zqGW6x_5N0k" 
+                                title="ANIMAL: ARJAN VAILLY | Ranbir Kapoor | Sandeep Vanga | Bhupinder B, Manan B | Bhushan K"
+                                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                 allowfullscreen></iframe>
+                            </Col>
+
                         </Row>
                     </Container>
                 </div>
