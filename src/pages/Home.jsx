@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import { Row, Col } from "react-bootstrap";
 import Add from "../components/Add";
+import View from "../components/View";
+import Category from "../components/Category";
 function Home() {
    return (
       <div>
-         <div className="container">
+         <div className="container mb-5">
             <Row>
                <Col lg={6} md={6}>
                   <div className="add-videos d-flex justify-content-center">
@@ -12,14 +14,19 @@ function Home() {
                      {/* //add a new component */}
                   </div>
                </Col>
-               <Col >
-                  <div className="watch-history d-flex justify-content-center">
-                     <Link to={'/history'} style={{ textDecoration: "none", fontSize: "30px", color: "white" }}> Watch History</Link>
+               <Col lg={6} md={6}>
+                  <div className="watch-history mt-4">
+                     <Link className="d-flex justify-content-center" to={'/history'} style={{ textDecoration: "none", fontSize: "30px", color: "white" }}> 
+                     Watch History</Link>
+                     <div className="d-flex justify-content-center mt-3">
+                        <Category/>
+                     </div>
                   </div>
                </Col>
             </Row>
-            <div className="container d-flex justify-content-between align-items-center">
-               <h4>all videos</h4>
+            <div className="container ">
+               <h4>All videos</h4>
+               <View/>
             </div>
 
 

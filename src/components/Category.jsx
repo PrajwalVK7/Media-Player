@@ -3,14 +3,14 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import { Form } from 'react-bootstrap';
-function Add() {
+function Category() {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     return (
         <>
             <div className='d-flex align-item-center mt-4 '>
-                <button onClick={handleShow} className='btn text-white ' style={{ fontSize: '30px' }} > Uplaod New Video<i class="fa-solid fa-cloud-arrow-up ms-3"></i></button>
+                <button onClick={handleShow} className='btn text-white ' style={{ fontSize: '30px' }} >Add New Category <i class="fa-solid fa-pencil "></i></button>
             </div>
             <Modal
                 show={show}
@@ -19,7 +19,7 @@ function Add() {
                 keyboard={false}
             >
                 <Modal.Header closeButton>
-                    <Modal.Title style={{ fontSize: '23px' }}><i class="fa-solid fa-film text-warning"></i> Uplaod Video</Modal.Title>
+                    <Modal.Title style={{ fontSize: '20px' }}>Add new category <i class="fa-solid fa-pencil text-warning"></i></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <p>Please Fill the following details</p>
@@ -46,4 +46,4 @@ function Add() {
     )
 }
 
-export default Add
+export default Category;
